@@ -25,3 +25,22 @@ code {
   width: 40px;
   margin: 0.5rem 0.8rem 0.5rem 2rem;
 }
+.hero--images-container {
+  display: flex;
+  justify-content: center;
+}
+.hero--img {
+  margin: 2rem;
+  width: 150px;
+  border-radius: 1rem;
+}
+.hero--title {
+  margin: 2rem;
+  font-size: 22px;
+  color:rgba(43, 43, 43, 0.473);
+}
+.hero--text {
+  margin: 2rem;
+  font-size: 18px;
+  color:rgba(82, 82, 82, 0.473);
+}
