@@ -25,6 +25,9 @@ code {
   width: 40px;
   margin: 0.5rem 0.8rem 0.5rem 2rem;
 }
+.hero--section-container, .section--card {
+  margin: 2rem;
+}
 .hero--images-container {
   display: flex;
   justify-content: center;
@@ -43,4 +46,38 @@ code {
   margin: 2rem;
   font-size: 18px;
   color:rgba(82, 82, 82, 0.473);
+}
+
+.section--card {
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  flex-wrap: wrap;
+}
+.section--card--rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.section--card__img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.section--card--rating__star-img {
+  width: 0.85rem;
+
+}
+.section--card-rating__text {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 0.4rem;
+}
+.section--card__description {
+  color:rgba(82, 82, 82, 0.473);
+  font-size: 14px;
+text-align: center;
 }
