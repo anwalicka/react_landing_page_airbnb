@@ -79,5 +79,26 @@ code {
 .section--card__description {
   color:rgba(82, 82, 82, 0.473);
   font-size: 14px;
-text-align: center;
+  text-align: justify;
+}
+.section--card__price {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.section--card__price--bold {
+  color:rgba(43, 43, 43, 0.473);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.section--card__price--normal {
+  color:rgba(43, 43, 43, 0.473);
+  font-size: 14px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
 }
