@@ -32,7 +32,7 @@ function App() {
       description: "Life lessons with Paulo",
       rating: 7.9,
       reviewCount: 10,
-      country:"PL",
+      country:"online",
       price: "$300",
       openSpots:3,
     },
@@ -48,13 +48,7 @@ function App() {
   ];
 
   const card = cardData.map(data => {
-    return <Card  img={data.img}
-                  description={data.description}
-                  rating={data.rating}
-                  reviewCount={data.reviewCount}
-                  country={data.country}
-                  price={data.price}
-                  openSpots={data.openSpots}/>
+    return <Card {...data} />
   })
   return (
     <div>

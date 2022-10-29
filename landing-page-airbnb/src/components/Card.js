@@ -2,8 +2,15 @@ import React from "react";
 import hero5 from '../images/hero5.jpg';
 import starSolid from '../images/star-solid.svg'
 export default function Card({img, description, rating, reviewCount, country, price, openSpots}) {
-    return (<section className="section--card">
-        {!openSpots && <span className="section--card__sold-out-text">SOLD OUT</span>}
+    let badgetText;
+    if(!openSpots) {
+        badgetText = 'SOLD OUT';
+    } else if(country === 'online'){
+        badgetText = 'ONLINE';
+    }
+    return (
+    <section className="section--card">
+         {badgetText && <span className="section--card__sold-out-text">{badgetText}</span>}
                 <img className="section--card__img" src={img}></img>
             <div className="section--card--rating-container">
                 <span>
