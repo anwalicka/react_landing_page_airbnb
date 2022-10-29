@@ -16,6 +16,7 @@ function App() {
       reviewCount: 5,
       country:"NL",
       price: "$250",
+      openSpots: 0,
     },
     {
       img: hero6,
@@ -24,6 +25,7 @@ function App() {
       reviewCount: 7,
       country:"DE",
       price: "$550",
+      openSpots: 1,
     },
     {
       img: hero4,
@@ -32,6 +34,7 @@ function App() {
       reviewCount: 10,
       country:"PL",
       price: "$300",
+      openSpots:3,
     },
     {
       img: hero3,
@@ -40,12 +43,18 @@ function App() {
       reviewCount: 11,
       country:"USA",
       price: "$950",
+      openSpots: 0,
     },
   ];
 
   const card = cardData.map(data => {
-    return <Card img={data.img} description={data.description} rating={data.rating}
-    reviewCount={data.reviewCount} country={data.country} price={data.price}/>
+    return <Card  img={data.img}
+                  description={data.description}
+                  rating={data.rating}
+                  reviewCount={data.reviewCount}
+                  country={data.country}
+                  price={data.price}
+                  openSpots={data.openSpots}/>
   })
   return (
     <div>

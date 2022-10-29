@@ -52,6 +52,7 @@ code {
   margin: 4rem;
   display: flex;
   justify-content: center;
+  min-width: 150px;
   width: 150px;
   flex-wrap: wrap;
 }
@@ -64,7 +65,7 @@ code {
 }
 .section--card__img {
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .section--card--rating__star-img {
@@ -100,5 +101,24 @@ code {
 
 .cards-container {
   display: flex;
-  flex-wrap: wrap;
+  width: 100vw;
+  flex: 0 0 auto;
+  overflow-x:visible; 
+  overflow-y: hidden;
+  scrollbar-gutter: auto;
+  overflow: overlay
+}
+
+.section--card {
+  position: relative;
+}
+
+.section--card__sold-out-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  font-weight: 700;
+  padding: 0.4rem;
+  font-size: 10px;
 }
